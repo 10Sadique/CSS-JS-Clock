@@ -12,6 +12,11 @@
                 <div class="hand second-hand"></div>
             </div>
         </div>
+        <div class="digital">
+            <p>
+                <span class="hour">Hour</span> : <span class="min">Min</span> : <span class="sec">Sec</span>
+            </p>
+        </div>
 
         <style>
             html {
@@ -29,6 +34,7 @@
                 flex: 1;
                 min-height: 100vh;
                 align-items: center;
+                position: relative;
             }
 
             .clock {
@@ -69,6 +75,14 @@
             }
             .second-hand{
                 background-color: #F15412;
+            }
+
+            .digital {
+                position: absolute;
+                bottom: 10px;
+                right: 50px;
+                font-family: 'Bmono';
+                color: #FFE5B4;
             }
         </style>
 
